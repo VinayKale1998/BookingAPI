@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const bookingRoutes = require("./routes/routes");
 const serverless =  require("serverless-http")
-
 const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -13,7 +12,7 @@ app.use("/", bookingRoutes);
 
 
 
-//connecting to the mongoDB atlas DB
+//connecting to the mongoDB atlas DB with a  username and password 
 try {
   mongoose.connect(
     "mongodb+srv://vinaykale1999:vinaykale@cluster0.mktz8ju.mongodb.net/BookMyShow?retryWrites=true&w=majority",

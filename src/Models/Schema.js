@@ -1,14 +1,9 @@
 const mongoose = require("mongoose");
 const Schema = require("mongoose").Schema;
 
-const seatSchema = new Schema({
-  A1: { type: Number, required: [true, "a1 not provided"] },
-  A2: { type: Number, required: [true, "a2 not provided"] },
-  A3: { type: Number, required: [true, "a3 not provided"] },
-  A4: { type: Number, required: [true, "a4 not provided"] },
-  D1: { type: Number, required: [true, "d1 not provided"] },
-  D2: { type: Number, required: [true, "d1 not provided"] },
-});
+
+
+//Validates the new booking object creation and throws the respective validation errors
 
 const booking = new Schema({
   movie: {
@@ -23,12 +18,21 @@ const booking = new Schema({
   slot: { type: String, required: [true, "slot not provided"], immutable: true },
   createdOn: {
     type: Date,
-    required: [true, "creation time not generated"],
     immutable: true,
     default: () => {
       return Date.now();
     },
   },
+});
+
+//this creates a seperate schema for seats for ease of  maintenance 
+const seatSchema = new Schema({
+  A1: { type: Number, required: [true, "a1 not provided"] },
+  A2: { type: Number, required: [true, "a2 not provided"] },
+  A3: { type: Number, required: [true, "a3 not provided"] },
+  A4: { type: Number, required: [true, "a4 not provided"] },
+  D1: { type: Number, required: [true, "d1 not provided"] },
+  D2: { type: Number, required: [true, "d1 not provided"] },
 });
 
 

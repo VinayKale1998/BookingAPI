@@ -1,11 +1,11 @@
 # BookMyShow API
-The project involves using NodeJS with express to build APIs for a movie booking application, We have named it BookMyShow. 
+This project is powered by NodeJS with express and mongoose for database operations to build REST API endpoints for a movie booking application named BookMyShow. 
 
-We have exposed two endpoints as per the requirements of the project, 
+We have exposed two endpoints as per the requirements of the project:
 
-**/api/booking** **:method:GET** : Will retrieve the last booking details from the MongoDB BookMyShow collection and send it to the client with 200 status code
+**/api/booking** **:method:GET** : Will retrieve the last booking details from the MongoDB BookMyShow collection and send it to the client with 200 status code, if no booking found; will still return 200 with no bookings found message, 500 status code will be returned with error message in case of server connection error
 
-**/api/booking** **:method:POST** : Will create a booking document  in the MongoDB collection after schema validation and send 200 status to the client for success and 400 status code incase of failure 
+**/api/booking** **:method:POST** : Will create a booking document  in the MongoDB collection after schema validation and send 200 status to the client for success and 400 status code incase of error 
 
  
 
@@ -19,6 +19,14 @@ We have exposed two endpoints as per the requirements of the project,
 ## Reflection💠
 
 - This project gave me a beautiful insight about the intricacies involved with backend the communication process with the front-end, learnt many other things along the way like JWT authentication and authorization(not implemented in this project).
+
+## packages used
+   - body-parser
+   - cors
+   - express
+   - mongoose
+   - nodemon
+   
 
 ## Built with
 
