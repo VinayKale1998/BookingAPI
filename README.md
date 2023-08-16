@@ -1,5 +1,5 @@
 # BookMyShow API
-The project uses NodeJS with express to build APIs for a movie booking application named BookMyShow. 
+This project is powered by NodeJS with express to build APIs for a movie booking application named BookMyShow. 
 
 We have exposed two endpoints as per the requirements of the project:
 
