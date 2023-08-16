@@ -16,18 +16,15 @@ According to the guidelines given for the CapStone project, we must develop a ba
 
 ## Reflection💠
 
-- This project gave me a beautiful insight about the insight about the intricacies involved with backend the communication process with the front-end, learnt many other things along the way like JWT authentication and authorization(not implemented in this project).
+- This project gave me a beautiful insight about the intricacies involved with backend the communication process with the front-end, learnt many other things along the way like JWT authentication and authorization(not implemented in this project).
 
 ## Built with
-<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" height="25">
-<img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" height="25">
-<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" height="25">
+
+<a href='https://nodejs.org/en' ><img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"  height="25"></a>
+<a href='https://expressjs.com/' ><img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"  height="25"></a>
+<a href='https://www.mongodb.com/' ><img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"  height="25"></a>
+
 
 ## Deployed on
-<a href='https://render.com/' ><img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"  height="25"></a>
+<a href='https://render.com/' ><img src="https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white"  height="25"></a>
 
-
-## Resources Used
-
-- Knowledge of Node, Express js and MongoDB.
-- Mongoose Docs.
