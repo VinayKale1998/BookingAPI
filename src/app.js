@@ -36,3 +36,5 @@ app.listen(PORT, (err) => {
   if (!err) console.log(`Server Listening to port ${PORT}`);
   else console.log("Server failed to launch");
 });
+
+module.exports= app;
