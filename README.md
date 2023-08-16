@@ -1,5 +1,5 @@
 # BookMyShow API
-This project is powered by NodeJS with express and mongoose for database operations to build REST API endpoints for a movie booking application named BookMyShow. 
+The project involves using NodeJS with express to build APIs for a movie booking application, We have named it BookMyShow. 
 
 We have exposed two endpoints as per the requirements of the project:
 
