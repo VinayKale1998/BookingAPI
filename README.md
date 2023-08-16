@@ -7,7 +7,7 @@ We have exposed two endpoints as per the requirements of the project:
 
 **/api/booking** **:method:POST** : Will create a booking document  in the MongoDB collection after schema validation and send 200 status to the client for success and 400 status code incase of error 
 
- 
+ API documentation : https://documenter.getpostman.com/view/18971417/2s9Xy6rqP2
 
  ## directory💠
     We have split the schema, the app and the routes into different modules
