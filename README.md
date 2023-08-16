@@ -1,7 +1,7 @@
 # BookMyShow API
 The project uses NodeJS with express to build APIs for a movie booking application named BookMyShow. 
 
-We have exposed two endpoints as per the requirements of the project, 
+We have exposed two endpoints as per the requirements of the project:
 
 **/api/booking** **:method:GET** : Will retrieve the last booking details from the MongoDB BookMyShow collection and send it to the client with 200 status code
 
