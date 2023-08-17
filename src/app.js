@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const bookingRoutes = require("./routes/routes");
-const serverless =  require("serverless-http")
 const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -29,7 +28,7 @@ try {
   );
 }
 
-//--------------------------------------spinning up the server-----------------------------
+//--------------------------------------listening  the server-----------------------------
 const PORT = 8080;
 app.listen(PORT, (err) => {
   if (!err) console.log(`Server Listening to port ${PORT}`);

@@ -1,7 +1,7 @@
 const bookingRoutes = require("express").Router();
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const Booking = require("../models/Schema")
+const Booking = require("../models/Schema");
 bookingRoutes.use(bodyParser.urlencoded({ extended: false }));
 bookingRoutes.use(bodyParser.json());
 bookingRoutes.use(cors());

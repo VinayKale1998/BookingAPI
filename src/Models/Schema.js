@@ -15,7 +15,7 @@ const booking = new Schema({
     type: seatSchema,
     required: [true, "seats not provided"],
   },
-  slot: { type: String, required: [true, "slot not provided"], immutable: true },
+  slot: { type: String, required: [true, "slot not provided"]},
   createdOn: {
     type: Date,
     immutable: true,
