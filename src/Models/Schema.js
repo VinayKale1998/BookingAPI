@@ -5,7 +5,7 @@ const Schema = require("mongoose").Schema;
 
 //Validates the new booking object creation and throws the respective validation errors
 
-const booking = new Schema({
+const Booking = new Schema({
   movie: {
     type: String,
     required: [true, "movie name not defined"],
@@ -37,4 +37,4 @@ const seatSchema = new Schema({
 
 
 
-module.exports = mongoose.model("Booking", booking);
+module.exports = mongoose.model("Booking", Booking);

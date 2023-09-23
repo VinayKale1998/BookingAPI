@@ -7,12 +7,18 @@ bookingRoutes.use(bodyParser.json());
 bookingRoutes.use(cors());
 
 
+ function verify(req,res,next)
+ {
+
+  console.log("Verified");
+  next();
+ }
 
 
   //POST endpoint for creating a movie booking ------------------------------------------------//
   // this route with POST will create a booking document in the MongoDB collection,
   // will return 200 with success message on successful document creation in mongoDB,else will return an error with status 400
-bookingRoutes.post("/api/booking", async (req, res) => {
+bookingRoutes.post("/api/booking",verify, async (req, res,next) => {
     console.log(req.body);
     const booking = new Booking({
       movie: req.body.movie,
@@ -22,11 +28,18 @@ bookingRoutes.post("/api/booking", async (req, res) => {
     try {
       await booking.save();
       console.log("Your booking is confirmed");
-      return res.status(200).send({ message: "Your booking has been confirmed" });
+      // return  res.status(200).send({ message: "Your booking has been confirmed" }) ;
+
+      return res.sendFile
+      
     } catch (err) {
       console.log(err.message);
       return res.status(400).send({ message: `${err.message}` });
     }
+
+
+
+
   });
   
 

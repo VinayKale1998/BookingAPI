@@ -2,12 +2,15 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const router= require("express").Router();
 const bookingRoutes = require("./routes/routes");
 const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use("/", bookingRoutes);
+
+app.use(router);
+router.use("/", bookingRoutes);
 
 
 
